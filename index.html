@@ -2,15 +2,6 @@
 <html>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-fountain@2/tsparticles.preset.fountain.bundle.min.js"></script>
 <head>
-	<script type="text/javascript">
-		(async () => {
-			await loadFountainPreset(tsParticles); // this is required only if you are not using the bundle script
-		
-			await tsParticles.load("tsparticles", {
-			preset: "fountain",
-			});
-		})();
-	</script>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
 	<meta name="generator" content="LibreOffice 7.4.0.3 (Windows)"/>
@@ -22,9 +13,59 @@
 		td p { orphans: 0; widows: 0; background: transparent }
 		a:link { color: #000080; so-language: zxx; text-decoration: underline }
 		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+		
+		body,
+		html {
+			height: 100%
+		}
+
+		#particles-js canvas {
+			display: block;
+			vertical-align: bottom;
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			opacity: 1;
+			-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+			transition: opacity .8s ease, transform 1.4s ease
+		}
+
+		#particles-js {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			z-index: -1;
+			top: 0;
+			left: 0
+		}
+
+		.text {
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%,-50%);
+			/* color: fff; */
+			max-width: 90%;
+			padding: 2em 3em;
+			/* background: rgba(0, 0, 0, 0.4); */
+			/* text-shadow: 0px 0px 2px #131415; */
+			font-family: 'Open Sans', sans-serif;
+		}
 	</style>
+
 </head>
 <body lang="en-GB" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0cm">
+	<script type="text/javascript">
+		(async () => {
+			//await loadFountainPreset(tsParticles); // this is required only if you are not using the bundle script
+		
+			await tsParticles.load("tsparticles", {
+			preset: "fountain",
+			});
+		})();
+	</script>
+<div id="particles-js"></div>
+<div class="text">
 Dr Imi Tietje and Mr Atu Harle are getting married some time in
 Spring 2024.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -40,7 +81,7 @@ to marry on September 8<sup>th</sup> 2022.</p>
 
 	<tr>
 		<td width="100%" valign="top" style="border: none; padding: 0cm"><p>
-			<img src="Wedding_html_43ba99e1e8aa6330.jpg" name="Image1" align="left" width="964" height="721" border="0"/>
+			<img src="Wedding_html_43ba99e1e8aa6330.jpg" name="Image1" align="left" width="482" height="360.5" border="0"/>
 <br/>
 
 			</p>
@@ -64,6 +105,6 @@ to marry on September 8<sup>th</sup> 2022.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
+</div>
 </body>
-
 </html>
